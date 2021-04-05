@@ -27,6 +27,8 @@ BASE_ELECTION_VOTE_INDEX = 70
 MINIMUM_REGISTERED_VOTERS = 50
 TOTAL_COUNTIES = 67
 
+KEY_FILE = './key.json' # file that contains the 'conversion key' that will allow you to predict votes cast in each county.
+
 def str_to_int(date):
     """Converts date in form MM/DD/YYYY to and integer of form YYYYMMDD. """
     tokens = date.strip().split('/')
@@ -129,8 +131,11 @@ def plot_turnout(turnout: Dict[int, int]):
     tt.sort()
     plt.plot([x[0] for x in tt], [x[1] for x in tt])
 
+import json
+
 if __name__ == '__main__':
     plotted = 0
+    key = {}
     for county in get_all_counties():
         print(f'reading county {county}')
         voters = get_voters(county)
@@ -138,7 +143,17 @@ if __name__ == '__main__':
         if not turnout:
             continue
         plotted += 1
+        for a in turnout:
+            if a not in key:
+                key[a] = []
+            key[a].append(turnout[a])
         plot_turnout(turnout)
+
+    for a in key:
+        avg = sum(key[a]) / len(key[a])
+        key[a] = avg
+    json.dump(key, open(KEY_FILE, 'w'))
+    print(f'wrote key to {KEY_FILE}')
 
     print(f'plotted {plotted} counties.')
     plt.xlabel(f'Age (ages with less than {MINIMUM_REGISTERED_VOTERS} registered voters are hidden)')

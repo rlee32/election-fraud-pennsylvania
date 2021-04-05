@@ -4,6 +4,20 @@ This exposes the pattern between voter turnout and age caused by voting machine 
 
 ## Results
 
+The following plots show how accurately actual votes cast can be predicted, given just the registered voters and overall turnout, for the 10 most populous counties in Pennsylvania.
+
+![alt text](plots/2020_predict_ALLEGHENY.png)
+![alt text](plots/2020_predict_YORK.png)
+![alt text](plots/2020_predict_BERKS.png)
+![alt text](plots/2020_predict_LEHIGH.png)
+![alt text](plots/2020_predict_LANCASTER.png)
+
+![alt text](plots/2020_predict_DELAWARE.png)
+![alt text](plots/2020_predict_BUCKS.png)
+![alt text](plots/2020_predict_PHILADELPHIA.png)
+![alt text](plots/2020_predict_CHESTER.png)
+![alt text](plots/2020_predict_MONTGOMERY.png)
+
 The following normalized turnout plots show how they converge to a common curve among all counties in the state. If you look at my other repositories, e.g. election-fraud-ohio, you will see that a similar convergence occurs, HOWEVER the exact curve is DIFFERENT, just by crossing state lines. This is not possible without fraud. All of the following normalized turnout plots use a 2020 voter roll.
 
 ![alt text](plots/2020.png)
