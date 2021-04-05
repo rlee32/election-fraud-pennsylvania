@@ -2,6 +2,12 @@
 
 This exposes the pattern between voter turnout and age caused by voting machine fraud in Pennsylvania in the 2020 General Presidential Election.
 
+## Results
+
+The following normalized turnout plots show how they converge to a common curve among all counties in the state. If you look at my other repositories, e.g. election-fraud-ohio, you will see that a similar convergence occurs, HOWEVER the exact curve is DIFFERENT, just by crossing state lines. This is not possible without fraud. All of the following normalized turnout plots use a 2020 voter roll.
+
+![alt text](plots/2020.png)
+
 ## Setup
 
 Requires python3. Before running, be sure you have enough free space for the downloaded and decompressed CSV files, about 6.6 GB.
