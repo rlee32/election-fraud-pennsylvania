@@ -1,4 +1,4 @@
 *.pyc
-jsonified/*.json
-voter_database/*.csv
 *.swp
+._*.*
+data/*

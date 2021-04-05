@@ -1,16 +1,16 @@
 # Voting Machine Fraud in the State of Pennsylvania
 
-This exposes the pattern between voter turnout and age that proves voting machine fraud in Pennsylvania was used in the 2020 General Presidential Election.
+This exposes the pattern between voter turnout and age caused by voting machine fraud in Pennsylvania in the 2020 General Presidential Election.
 
 ## Setup
 
-Requires python3. Before running, be sure you have enough free space for the downloaded CSV files and converted JSON files, on the order of several GB.
+Requires python3. Before running, be sure you have enough free space for the downloaded and decompressed CSV files, about 6.6 GB.
 
 ## Running
 
 1. Download voter registration database (see 'Data Source' section).
-2. (TODO) Convert raw csv data to json (may take a while): `./jsonify.py`
-3. (TODO) Finally, plot voter turnout lines vs. age for all counties on the same plot: `./plot_turnout_by_age.py`
+2. Move and rename decompressed folder to `./data/Statewide`.
+3. To plot voter turnout lines vs. age for all counties on the same plot: `./plot_turnout_by_age.py`.
 
 ## Data Source
 
