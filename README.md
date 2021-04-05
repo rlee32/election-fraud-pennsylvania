@@ -21,6 +21,9 @@ The following plots show how accurately actual votes cast can be predicted, give
 The following normalized turnout plots show how they converge to a common curve among all counties in the state. If you look at my other repositories, e.g. election-fraud-ohio, you will see that a similar convergence occurs, HOWEVER the exact curve is DIFFERENT, just by crossing state lines. This is not possible without fraud. All of the following normalized turnout plots use a 2020 voter roll.
 
 ![alt text](plots/2020.png)
+![alt text](plots/2016.png)
+![alt text](plots/2012.png)
+![alt text](plots/2008.png)
 
 ## Setup
 

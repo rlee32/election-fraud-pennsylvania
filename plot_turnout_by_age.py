@@ -8,7 +8,7 @@ from typing import Dict
 # Data files (tab-separated) do not contain header files, so you need to consult the included 'Voter Export' doc,
 # and hard-code the indices here.
 
-ELECTION_YEAR = 2020 # choose presidential election years from 2000 - 2020
+ELECTION_YEAR = 2004 # choose presidential election years from 2000 - 2020
 ELECTION_DAY = {
     2020: '03',
     2016: '08',
